@@ -10,8 +10,8 @@
  */
 public class Rectangle {
         // Data Variables
-        double height = 10;
-        double width = 10;
+        double height;
+        double width;
         // Rectangle calcul
         double getArea() {
             return height * width;
