@@ -28,8 +28,8 @@ public class Rectangle {
             Rectangle r1 = new Rectangle();
             r1.height = 10;
             r1.width = 10;
-            System.out.println(r1.height);
-            System.out.println(r1.width);
+            System.out.println(r1.getArea());
+            System.out.println(r1.getPerimeter());
             
     } 
 }
