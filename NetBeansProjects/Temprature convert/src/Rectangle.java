@@ -9,27 +9,31 @@
  * @author 2701faiqbal
  */
 public class Rectangle {
-        // Data Variables
-        double height;
-        double width;
-        // Rectangle calcul
+        // Data Variables with default value 1
+        double width = 1;
+        double height = 1;
+        // Rectangle calculate
         double getArea() {
-            return height * width;
+            return width * height;
         }
-        // Perimeter calcul
+        // Perimeter calculate
         double getPerimeter() {
-            return 2 + (height + width);
+            return 2 + (width + height);
         }
         // 
         public static void main(String[] args) {
-        //
-        //Rectangle.main(args);
-        //double number = Math.cos(Math.PI);
+        // First Triangle
             Rectangle r1 = new Rectangle();
-            r1.height = 10;
-            r1.width = 10;
+            r1.height = 40;
+            r1.width = 4;
             System.out.println(r1.getArea());
             System.out.println(r1.getPerimeter());
-            
+        // Second Triangle 
+            Rectangle r2 = new Rectangle();
+            r2.height = 35.9;
+            r2.width = 3.5;
+            System.out.println(r2.getArea());
+            System.out.println(r2.getPerimeter());
+        //End
     } 
 }
