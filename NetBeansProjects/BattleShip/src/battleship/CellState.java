@@ -9,12 +9,14 @@ package battleship;
  *
  * @author 2701faiqbal
  */
-public class BattleModel {
-    
-    public enum State {
-        CONFIGURING,
-        PLAYING,
-        DONE
+public class CellState {
+    public enum CellState {
+        UNKNOWN,
+        NOTHING,
+        WATER,
+        SHIP,
+        TOUCH,
+        SUNK
+        
     }
-    FriendGrid friendGrid;
 }

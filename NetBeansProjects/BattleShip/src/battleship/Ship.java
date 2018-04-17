@@ -10,6 +10,11 @@ package battleship;
  * @author 2701faiqbal
  */
 public class Ship {
+    public enum Orientation { 
+    HORIZONTAL,
+    VERTICAL
+    //  
+    // Ship Type    
     int x;
     int y;
     

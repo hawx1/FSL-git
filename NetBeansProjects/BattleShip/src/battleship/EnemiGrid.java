@@ -9,12 +9,6 @@ package battleship;
  *
  * @author 2701faiqbal
  */
-public class BattleModel {
+public class EnemiGrid {
     
-    public enum State {
-        CONFIGURING,
-        PLAYING,
-        DONE
-    }
-    FriendGrid friendGrid;
 }
