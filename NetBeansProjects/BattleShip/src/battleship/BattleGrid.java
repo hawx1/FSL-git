@@ -11,16 +11,38 @@ import java.util.ArrayList;
  *
  * @author 2701faiqbal
  */
-public class BattleGrid {
-    // Array List for Ships
-    ArrayList<Ship> ships = new ArrayList<>();
-    Ship[] shipList = new Ship[100];
-    // Array List for Bombs
-    ArrayList<Bomb> bombs = new ArrayList<>();
-    Bomb[] bombList = new Bomb[100];
-    // BattleGrid Size
-    int s = 5;
+public abstract class BattleGrid {
+    protected int size;
+    protected ArrayList<Ship> ships = new ArrayList<>();
+    protected ArrayList<Bomb> bombs = new ArrayList<>();
+
+    public BattleGrid(int size) {
+        this.size = size;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public ArrayList<Ship> getShips() {
+        return ships;
+    }
+
+    public ArrayList<Bomb> getBombs() {
+        return bombs;
+    }
     
+    public CellState[][] getCellsState() {
+        CellState[][] cells = new CellState[size][size];
+        for(int l=0; l<size; l++) {
+            for(int c=0; c<size; c++) {
+                cells[l][c] = CellState.WATER;
+            }
+        }
+        return cells;
+    }
     
-    
+    FireResult fire(int x, int y) {
+        return FireResult.WATER;
+    }
 }

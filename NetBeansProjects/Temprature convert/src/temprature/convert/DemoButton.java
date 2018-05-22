@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 public abstract class DemoButton extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage stage) {
         Button b1 = new Button("1");
         Button b2 = new Button("2");
         Button b3 = new Button("3");
